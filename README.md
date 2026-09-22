@@ -5,7 +5,7 @@
 
 To design and implement a complex engineering solution—specifically an **AI-Based Smart Traffic Signal Controller**—by implementing a structured **Prompt Chain**. 
 
----
+
 
 ## 🔗 Prompt Chaining Methodology & Pipeline
 
@@ -24,7 +24,7 @@ Rather than generating a system design using a single monolithic prompt (which o
                                          └───────────┘     │ Flowchart │
                                                            └───────────┘
 
----
+
 
 ## 🛠️ PROMPT CHAIN EXECUTION STEPS
 
