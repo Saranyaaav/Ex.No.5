@@ -112,6 +112,7 @@ if __name__ == "__main__":
         "Westbound":  {"vehicle_count": 18, "emergency_vehicle_detected": False}
     }
     controller.process_cycle(simulated_inputs)
+```
 
 ### 🔹 Step 7: Testing Strategy
 
@@ -164,6 +165,7 @@ def test_emergency_vehicle_priority_override(controller):
     schedule = controller.process_intersection_cycle(telemetry)
     assert schedule["South"] == 60  # Dedicated emergency window
     assert schedule["North"] == 0   # Held red for safe passage
+```
 
 ### 🔹 Step 8: Project Documentation
 
