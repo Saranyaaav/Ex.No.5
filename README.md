@@ -23,7 +23,7 @@ Rather than generating a system design using a single monolithic prompt (which o
 └──────────────┘     └─────────────┘     │ Code      │ ◄── │ Step 5    │
                                          └───────────┘     │ Flowchart │
                                                            └───────────┘
-
+```
 
 
 ## 🛠️ PROMPT CHAIN EXECUTION STEPS
