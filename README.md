@@ -7,7 +7,7 @@ To design and implement a complex engineering solution—specifically an **AI-Ba
 
 
 
-## 🔗 Prompt Chaining Methodology & Pipeline
+## Prompt Chaining Methodology & Pipeline
 
 Rather than generating a system design using a single monolithic prompt (which often leads to truncated logic and missing edge cases), this project breaks down the pipeline into an 8-stage execution chain:
 
@@ -26,44 +26,44 @@ Rather than generating a system design using a single monolithic prompt (which o
 ```
 
 
-## 🛠️ PROMPT CHAIN EXECUTION STEPS
+## PROMPT CHAIN EXECUTION STEPS
 
-### 🔹 Step 1: Problem Definition
+### Step 1: Problem Definition
 * **Prompt:**
   > `"Define the core engineering problem of urban traffic congestion, identifying key pain points, modern hardware constraints, and the goal of an AI-driven real-time smart traffic signal control system."`
 * **Output Context Passed Forward:** Core objective, high-level system boundary, and primary problem metrics (e.g., reducing wait times, prioritizing emergency vehicles).
 
 ---
 
-### 🔹 Step 2: Requirement Analysis
+### Step 2: Requirement Analysis
 * **Prompt:**
   > `"Based on the defined problem, perform a detailed Requirement Analysis. Categorize specifications into Functional Requirements (e.g., vehicle detection, dynamic signal adjustment), Non-Functional Requirements (e.g., low latency, sub-50ms inference), and Hardware/Software Dependencies."`
 * **Output Context Passed Forward:** Functional inputs/outputs and latency budget constraints.
 
 ---
 
-### 🔹 Step 3: System Architecture
+### Step 3: System Architecture
 * **Prompt:**
   > `"Using the requirement analysis from Step 2, design the system architecture. Specify the data flow between input sensors (CCTV cameras, edge computing nodes), central processing engine (YOLO-based detection + reinforcement learning traffic controller), and output actuators (smart signal controllers). Provide a text-based ASCII architectural diagram."`
 * **Output Context Passed Forward:** Component architecture and communication interfaces.
 
 ---
 
-### 🔹 Step 4: Algorithm Design
+### Step 4: Algorithm Design
 * **Prompt:**
   > `"Focusing on the traffic processing component from the architecture, write a step-by-step pseudo-algorithm for dynamic signal switching based on real-time vehicle density and emergency vehicle override prioritization."`
 * **Output Context Passed Forward:** Algorithmic rules, thresholding parameters, and priority queue handling.
 
 ---
 
-### 🔹 Step 5: Flowchart Logic
+### Step 5: Flowchart Logic
 * **Prompt:**
   > `"Convert the pseudo-algorithm from Step 4 into a structured logic representation using Mermaid.js syntax. Ensure all decision points (e.g., emergency vehicle detected?, density > threshold?) and loop backs are explicitly mapped."`
 * **Output Context Passed Forward:** Formalized decision-tree logic flow.
 
 ---
 
-### 🔹 Step 6: Python Code Implementation
+### Step 6: Python Code Implementation
 * **Prompt:**
   > `"Translate the algorithm and flowchart logic from Steps 4 and 5 into modular, clean Python code. Implement simulated vehicle detection inputs, time allocation functions, and emergency override logic using object-oriented principles."`
 
@@ -114,7 +114,7 @@ if __name__ == "__main__":
     controller.process_cycle(simulated_inputs)
 ```
 
-### 🔹 Step 7: Testing Strategy
+### Step 7: Testing Strategy
 
 * **Prompt Executed:**
   > `"Design a test suite framework for the Python implementation from Step 6. Provide unit tests using pytest covering: 1) Normal traffic conditions, 2) Zero traffic bounds, 3) Maximum density cap, and 4) Emergency vehicle priority overrides."`
@@ -167,7 +167,7 @@ def test_emergency_vehicle_priority_override(controller):
     assert schedule["North"] == 0   # Held red for safe passage
 ```
 
-### 🔹 Step 8: Project Documentation
+### Step 8: Project Documentation
 
 * **Prompt Executed:**
   > `"Compile a brief technical summary documenting the system, operational constraints, trade-offs of the chosen dynamic heuristic, and future integration steps for edge hardware deployment."`
@@ -185,7 +185,7 @@ def test_emergency_vehicle_priority_override(controller):
     2. **Hardware Interfacing:** Connect edge GPIO outputs directly to optoisolated 4-channel relay modules to safely trigger standard 230V AC traffic light signal heads.
     3. **Fail-Over Watchdog:** Implement a hardware watchdog timer to physically trigger the fail-safe default loop if the main control script stops responding.
 
-## 📊 Evaluation of Prompt Chaining Methodology
+## Evaluation of Prompt Chaining Methodology
 
 | Evaluation Parameter | Monolithic (Single) Prompt Approach | Prompt Chained Sequence Approach |
 | :--- | :--- | :--- |
@@ -194,7 +194,7 @@ def test_emergency_vehicle_priority_override(controller):
 | **Error Propagation** | High (Failures break entire output) | Low (Errors caught/corrected in place) |
 | **Context Window Optimization** | High token loss on re-rolls | Efficient (Only necessary prior state passed) |
 
-## 🏁 Conclusion
+## Conclusion
 
 By decomposing the AI Smart Traffic System engineering task into a structured sequence of prompts:
 
