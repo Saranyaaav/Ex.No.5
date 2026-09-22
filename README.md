@@ -1,14 +1,9 @@
-# EX-05: Engineering Problem Solving via Prompt Chaining
+# EXP 5: COMPARATIVE ANALYSIS OF DIFFERENT TYPES OF PROMPTING PATTERNS AND EXPLAIN WITH VARIOUS TEST SCENARIOS
 
-**Repository Name:** Ex.No.5 (Prompt Chaining for System Design & Engineering)  
-**Project Focus:** AI-Based Smart Traffic Management System
 
----
+# Aim: To test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios.  Analyze the quality, accuracy, and depth of the generated responses 
 
-## 🎯 Aim
 To design and implement a complex engineering solution—specifically an **AI-Based Smart Traffic Signal Controller**—by implementing a structured **Prompt Chain**. 
-
-The primary objective is to demonstrate how decomposing a multi-phase systems engineering problem into sequential, interdependent prompts improves LLM context retention, mathematical rigor, architectural clarity, and code quality.
 
 ---
 
